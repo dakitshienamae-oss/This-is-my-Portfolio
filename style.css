@@ -1,0 +1,226 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  scroll-behavior: smooth;
+  background-color: #f4f9ff;
+  color: #1f2d3d;
+}
+
+/* SECTIONS */
+.section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+/* SOFT BACKGROUNDS */
+.home {
+  background: linear-gradient(135deg, #cfe8ff, #ffffff);
+}
+
+.about {
+  background: #f4f9ff;
+}
+
+.certs {
+  background: #e6f3ff;
+}
+
+.certs2 {
+  background: #f4f9ff;
+}
+
+.certs3 {
+  background: #e6f3ff;
+}
+
+.contact {
+  background: #ffffff;
+}
+
+/* HEADINGS */
+h1, h2 {
+  color: #2b6cb0;
+}
+
+/* PROFILE */
+.profile-pic {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+
+  border-radius: 12px;
+  border: 3px solid #90cdf4;
+
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  margin-bottom: 15px;
+}
+
+/* ABOUT BOX */
+.about-box {
+  background: #ffffff;
+  margin: 15px auto;
+  padding: 15px;
+  border-radius: 12px;
+  width: 70%;
+  border: 1px solid #cfe8ff;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+/* CERT GRID */
+.cert-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+/* CERT CARD */
+.cert-card {
+  background: #ffffff;
+  padding: 10px;
+  border-radius: 12px;
+  width: 280px;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+}
+
+/* CERT IMAGE */
+.cert-img {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+
+  border-radius: 10px;
+  border: 2px solid #90cdf4;
+
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.cert-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(144, 205, 244, 0.5);
+}
+
+/* POPUP */
+#popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background: rgba(0,0,0,0.7);
+
+  justify-content: center;
+  align-items: center;
+}
+
+#popup-img {
+  max-width: 90%;
+  max-height: 90%;
+
+  border-radius: 10px;
+  border: 3px solid #90cdf4;
+}
+
+/* CONTACT */
+.contact-text {
+  color: #4a5568;
+  margin-bottom: 20px;
+}
+
+.contact-box {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  background: #ffffff;
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: 1px solid #cfe8ff;
+
+  width: 280px;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+}
+
+
+/* ========================= */
+/* RESPONSIVE (MOBILE VIEW)  */
+/* ========================= */
+
+@media screen and (max-width: 768px) {
+
+  .section {
+    height: auto;
+    min-height: 100vh;
+    padding: 40px 15px;
+    flex-direction: column;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  .profile-pic {
+    width: 160px;
+    height: 160px;
+  }
+
+  .about-box {
+    width: 95%;
+    font-size: 14px;
+  }
+
+  .cert-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cert-card {
+    width: 90%;
+  }
+
+  .cert-img {
+    height: 150px;
+  }
+
+  .contact-box {
+    width: 100%;
+  }
+
+  .contact-item {
+    width: 90%;
+    font-size: 14px;
+  }
+
+  .icon {
+    width: 18px;
+    height: 18px;
+  }
+
+  #popup-img {
+    max-width: 95%;
+    max-height: 80%;
+  }
+}
